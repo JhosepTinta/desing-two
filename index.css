@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    padding: 20px 150px;
+    justify-content: space-between;
+    background-color: #C4D3E0;
+    box-shadow: 0px 5px 4px grey;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu .nav-item {
+    list-style: none;
+    margin-left: 5rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.contact {
+    background-color: #0194FE;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.logo-container .name{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #34B1FC;
+    letter-spacing: 2px;
+}
+
+.logo-container .name span{
+    color: #253039;
+}
+
+.logo-container .lema{
+    font-size: 10px;
+    font-weight: 600;
+    color: #012B7E;
+    letter-spacing: 2px;
+}
+
+.banner-image {
+    height: 130vh;
+    position: relative;
+}
+
+.banner-image .banner-text {
+    width: 50%;
+    height: 70vh;
+    background-color: #bcbcbca8;
+}
+
+.banner-image img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    object-position: top;
+    z-index: -10;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.banner-text p{
+    color: #011149;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.banner-text a{
+    background-color: #012B7E;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    box-sizing: content-box;
+    margin-left: 100px;
+}
+
+main {
+    position: relative;
+    top: -60vh;
+    background-color: white;
+   
+    border-radius: 0 550px 0 0;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    border-radius: 0 550px 0 0;
+    padding-bottom: 50px;
+    box-shadow: 0px 10px 5px grey;
+}
+
+.info-container h2 {
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: #727272;
+    border-bottom: 5px solid #5DD3E9;
+    padding: 5px;
+    margin: 100px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.info img {
+    width: 450px;
+}
+
+.info-data-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+    margin-left: 250px;
+}
+
+.info-data-item {
+    background-color: white;
+    color: #727272;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px grey;
+    margin-right: 30px;
+}
+
+.info-data-item-dark {
+    background-color: #012B7E;
+    color: white;
+}
+
+.info-data-value {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.service-title {
+    display: inline-block;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    color: #727272;
+    padding: 5px 120px;
+    border-bottom: 5px solid #5DD3E9;
+    margin: 100px 0;
+}
+
+.service {
+   /* display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   margin-left: 10%; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+}
+
+.service-item {
+    width: 450px;
+    height: 300px;
+    background-color: #0194FE;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    box-sizing: border-box;
+    /* margin-right: 100px;
+    margin-bottom: 50px; */
+    position: relative;
+}
+
+.service-item-div {
+    margin-bottom: 50px;
+}
+
+.service-item p {
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.service-item div {
+    position: absolute;
+    background-color: #2530397a;
+    left: 0;
+    z-index: 7;
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+.service-item img {
+    position: absolute;
+    left: 0;
+    z-index: 5;
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+.service-list li{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #4c4d4c;
+    padding-bottom: 50px;
+}
+
+.experience {
+    margin: 0 10%;;
+    column-count: 4;
+    column-gap: 1em;
+    line-break: avoid;
+}
+
+.experience img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.white {
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.contact-form {
+    height: 70vh;
+    width: 70%;
+    background-color: rgb(238, 237, 237);
+    box-shadow: 10px 10px 5px gray;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 35%;
+    height: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+input {
+    width: 310px;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+textarea {
+    width: 95%;
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    background-color: #012B7E;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}
